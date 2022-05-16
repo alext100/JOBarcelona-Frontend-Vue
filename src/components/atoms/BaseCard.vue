@@ -58,7 +58,7 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 180px;
+  min-height: 180px;
   border: 1px solid blue;
   background-color: #dcd5ff;
   margin: 10px;
@@ -79,12 +79,14 @@ export default defineComponent({
     margin: 15px 10px 0 20px;
   }
   &__tags {
+    display: flex;
+    flex-wrap: wrap;
     width: fit-content;
     margin: 15px 10px 10px 20px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 410px) {
   .card {
     max-width: 95vw;
     min-height: 150px;
