@@ -1,0 +1,34 @@
+{
+  "groups": [
+    {
+      "groupName": "Family",
+      "groupDescription": "Lista de regalos para el grupo Family",
+      "groupTags": ["Family", "Sport"]
+    },
+    {
+      "groupName": "Crew",
+      "groupDescription": "Lista de regalos para el grupo Crew",
+      "groupTags": ["Deportes de riesgo", "Libros"]
+    },
+    {
+      "groupName": "Otro",
+      "groupDescription": "Lista de regalos para el grupo Otro",
+      "groupTags": ["Cuadros", "Flores"]
+    },
+    {
+      "groupName": "Pareja",
+      "groupDescription": "Lista de regalos para el grupo Pareja",
+      "groupTags": ["Entradas al teatro", "Flores"]
+    },
+    {
+      "groupName": "Cocineros",
+      "groupDescription": "Lista de regalos para el grupo Cocineros",
+      "groupTags": ["Sellos para galletas", "Multicortadores"]
+    },
+    {
+      "groupName": "Niños",
+      "groupDescription": "Lista de regalos para el grupo Niños",
+      "groupTags": ["Máscara Star Wars", "Kit para fiestas"]
+    }
+  ]
+}

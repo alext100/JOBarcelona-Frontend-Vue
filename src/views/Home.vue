@@ -1,18 +1,14 @@
 <template>
-  <GiftCard
-    groupName="Family"
-    groupDescription="Lista de regalos para el grupo Family"
-    :groupTags="['Family', 'Sport']"
-  />
+  <cards-component> </cards-component>
 </template>
 
 <script lang="ts">
-import GiftCard from "@/components/molecules/GiftCard.vue";
+import CardsComponent from "@/components/organisms/CardList.vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "Home",
-  components: { GiftCard },
+  components: { CardsComponent },
 });
 </script>
 
