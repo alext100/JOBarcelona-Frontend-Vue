@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, PropType } from "vue";
 
 export default defineComponent({
   name: "BaseCard",
@@ -46,8 +46,8 @@ export default defineComponent({
       description: "Whether card has shadow",
     },
     shadowSize: {
-      type: String,
-      description: "Card shadow size. Values: sm, lg, none",
+      type: String as PropType<"sm" | "lg" | "none">,
+      description: "Card shadow size",
     },
   },
 });
