@@ -13,15 +13,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, PropType, VNodeTypes } from "vue";
 
 export default defineComponent({
   name: "BaseTag",
   props: {
     tag: {
-      type: String,
+      type: String as PropType<VNodeTypes>,
       default: "span",
-      description: "Html tag to use for the tag.",
+      description: "Html tag to use for the tag",
     },
     shadow: {
       type: Boolean,
@@ -29,13 +29,13 @@ export default defineComponent({
       description: "Whether tag has shadow",
     },
     shadowSize: {
-      type: String,
-      description: "Card shadow size. Values: sm, lg, none",
+      type: String as PropType<"sm" | "lg" | "none">,
+      description: "Card shadow size",
     },
     color: {
-      type: String,
+      type: String as PropType<"default" | "red" | "green" | "black" | "blue">,
       default: "default",
-      description: "Tag background color. Values: default, red, green, black, blue",
+      description: "Tag background color",
     },
   },
 });
