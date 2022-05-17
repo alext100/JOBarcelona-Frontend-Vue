@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <base-card :hover="true" :shadow="true" shadowSize="md">
+    <base-card :hover="true" :shadow="true" shadowSize="lg">
       <template v-slot:header>
-        <h2 class="header">Crew</h2>
+        <b-t tag="h2" class="header" fontWeight="bold" italic size="l" uppercase>Crew</b-t>
         <img
           src="party-popper-icon.png"
           alt="icon"
@@ -10,7 +10,7 @@
         />
       </template>
       <template v-slot:body>
-        <p class="body">Lista de regalos para el grupo Crew</p>
+        <b-t tag="p" class="body">Lista de regalos para el grupo Crew</b-t>
         <img
           src="party-popper-icon.png"
           alt="icon"
@@ -18,7 +18,7 @@
         />
       </template>
       <template v-slot:tags>
-        <base-tag tag="span" shadow>XXXX XXXXX YYYY YYY</base-tag>
+        <base-tag tag="span" shadow shadowSize="sm">XXXX XXXXX YYYY YYY</base-tag>
         <base-tag tag="span" color="blue">XXXX XXXXX</base-tag>
       </template>
     </base-card>
@@ -26,13 +26,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
 import BaseCard from "@/components/atoms/BaseCard.vue";
 import BaseTag from "@/components/atoms/BaseTag.vue";
+import BaseTypography from "@/components/atoms/BaseTypography.vue";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "Home",
-  components: { BaseCard, BaseTag },
+  components: { BaseCard, BaseTag, BT: BaseTypography },
 });
 </script>
 
