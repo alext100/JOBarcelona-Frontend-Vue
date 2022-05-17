@@ -1,0 +1,78 @@
+<template>
+  <div class="gift-card">
+    <base-card :hover="true" :shadow="true" shadowSize="lg">
+      <template v-slot:header>
+        <b-t tag="h2" class="gift-card__header" fontWeight="bold" italic size="l" uppercase>
+          {{ groupName }}
+        </b-t>
+        <img src="party-popper-icon.png" alt="icon" class="gift-card__header-icon" />
+      </template>
+      <template v-slot:body>
+        <b-t tag="p" class="gift-card__body">{{ groupDescription }}</b-t>
+        <img src="party-popper-icon.png" alt="icon" class="gift-card__body-icon" />
+      </template>
+      <template v-slot:tags>
+        <base-tag
+          v-for="(tag, index) in groupTags"
+          :key="index"
+          class="gift-card__tag"
+          tag="span"
+          shadow
+          shadowSize="sm"
+        >
+          {{ tag }}
+        </base-tag>
+      </template>
+    </base-card>
+  </div>
+</template>
+
+<script lang="ts">
+import BaseCard from "@/components/atoms/BaseCard.vue";
+import BaseTag from "@/components/atoms/BaseTag.vue";
+import BaseTypography from "@/components/atoms/BaseTypography.vue";
+import { defineComponent, PropType } from "vue";
+
+export default defineComponent({
+  name: "GiftCard",
+  components: { BaseCard, BaseTag, BT: BaseTypography },
+  props: {
+    groupName: {
+      type: String,
+      required: true,
+    },
+    groupDescription: {
+      type: String,
+      required: true,
+    },
+    groupTags: {
+      type: Array as PropType<string[]>,
+      required: true,
+    },
+  },
+});
+</script>
+
+<style lang="scss" scoped>
+.gift-card {
+  &__header {
+    display: inline;
+  }
+  &__header-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 0 15px 10px;
+  }
+  &__body {
+    display: inline;
+  }
+  &__body-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 0 10px 10px;
+  }
+  &__tag {
+    margin: 0 20px 20px 0;
+  }
+}
+</style>
