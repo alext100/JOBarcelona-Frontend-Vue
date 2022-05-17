@@ -44,7 +44,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .base-tag {
   color: white;
-  padding: 5px 7px 5px 7px;
+  padding: 3px 10px 3px 10px;
   margin-right: 5px;
   border-radius: 15px;
   white-space: nowrap;
