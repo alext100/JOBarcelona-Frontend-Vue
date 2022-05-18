@@ -72,7 +72,7 @@ jobarcelona22-frontend-vue
 └── tsconfig.json
 ```
 
-## Stack
+### Stack
 
 | Package         | Version |
 | --------------- | ------- |
@@ -87,42 +87,48 @@ jobarcelona22-frontend-vue
 | typescript      | 4.6.4   |
 | babel-loader    | 8.2.5   |
 
-## Cómo funciona
+### Cómo funciona
 
 https://user-images.githubusercontent.com/83639312/169144678-24e531ef-28e9-46db-ae95-d77ebb6f384e.mov
 
+### SonarCloud
 
-## Project setup
+https://sonarcloud.io/summary/overall?id=alext100_JOBarcelona-Frontend-Vue
+![2022-05-18_222751](https://user-images.githubusercontent.com/83639312/169150105-12859b33-493f-4998-b88b-0a1bc9db2bf7.png)
+5 bugs - false positive! (Unexpected unknown pseudo-class selector ":deep") ":deep" es selector de Vue
+
+
+### Project setup
 
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+#### Compiles and hot-reloads for development
 
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+#### Compiles and minifies for production
 
 ```
 npm run build
 ```
 
-### Run your unit tests
+#### Run your unit tests
 
 ```
 npm run test:unit
 ```
 
-### Lints and fixes files
+#### Lints and fixes files
 
 ```
 npm run lint
 ```
 
-### Run StoryBook
+#### Run StoryBook
 
 ```
 npm run storybook
