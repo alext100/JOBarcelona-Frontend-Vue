@@ -29,12 +29,18 @@
 import BaseCard from "@/components/atoms/BaseCard.vue";
 import BaseTag from "@/components/atoms/BaseTag.vue";
 import BaseTypography from "@/components/atoms/BaseTypography.vue";
+import useSplitText from "@/composables/useSplitText";
 import { defineComponent, PropType } from "vue";
 import { mapActions } from "vuex";
 
 export default defineComponent({
   name: "GiftCard",
   components: { BaseCard, BaseTag, BT: BaseTypography },
+  setup() {
+    useSplitText(".gift-card__header", "ChartsWave");
+    useSplitText(".gift-card__tag", "staggerFromEnd");
+  },
+
   props: {
     groupName: {
       type: String,
