@@ -7,6 +7,14 @@
 <script lang="ts">
 import { computed, defineComponent, PropType } from "vue";
 
+/**
+ * Base Typography component
+ * @example
+  <BaseTypography tag="h2" class="gift-card__header" fontWeight="bold" size="l" uppercase>
+    Some text content here
+  <BaseTypography />
+ */
+
 export default defineComponent({
   name: "BaseTypography",
   props: {
