@@ -1,6 +1,6 @@
 <template>
   <div class="gift-card">
-    <base-card :hover="true" shadow>
+    <base-card :hover="true" shadow @handleOnClick="handleOnClick">
       <template v-slot:header>
         <b-t tag="h2" class="gift-card__header" fontWeight="bold" size="l" uppercase>
           {{ groupName }}
@@ -32,6 +32,7 @@ import BaseCard from "@/components/atoms/BaseCard.vue";
 import BaseTag from "@/components/atoms/BaseTag.vue";
 import BaseTypography from "@/components/atoms/BaseTypography.vue";
 import { defineComponent, PropType } from "vue";
+import { mapActions } from "vuex";
 
 export default defineComponent({
   name: "GiftCard",
@@ -48,6 +49,13 @@ export default defineComponent({
     groupTags: {
       type: Array as PropType<string[]>,
       required: true,
+    },
+  },
+
+  methods: {
+    ...mapActions(["actionToDispatchOnClick"]),
+    handleOnClick() {
+      this.actionToDispatchOnClick();
     },
   },
 });
