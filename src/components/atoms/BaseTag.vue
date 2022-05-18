@@ -48,6 +48,7 @@ export default defineComponent({
   margin-right: 5px;
   border-radius: 15px;
   white-space: nowrap;
+  font-size: large;
 }
 .bg {
   &-default {
@@ -68,7 +69,7 @@ export default defineComponent({
 }
 @media (max-width: 400px) {
   .base-tag {
-    font-size: smaller;
+    font-size: medium;
   }
 }
 </style>
