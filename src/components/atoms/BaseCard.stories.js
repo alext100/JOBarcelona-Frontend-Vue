@@ -46,22 +46,7 @@ const Template = (args) => ({
       args,
     };
   },
-  template: "<base-card v-bind='args' @click='onClick'></base-card>",
-});
-
-const TemplateWithSlots = (args) => ({
-  components: { BaseCard },
-  setup() {
-    return {
-      onClick: action("handleOnClick"),
-      args,
-    };
-  },
-  template: `<base-card v-bind='args' @click='onClick'>
-               <template v-slot:header>Header</template>
-               <template v-slot:body>Body text</template>
-               <template v-slot:tags>Tag</template>
-             </base-card>`,
+  template: `<base-card v-bind='args' @click='onClick'> ${args.slots || ""} </base-card>`,
 });
 
 export const Hover = Template.bind({});
@@ -83,10 +68,15 @@ export const ShadowLg = Template.bind({});
 ShadowLg.args = {
   shadowSize: "lg",
 };
+
 export const ShadowNone = Template.bind({});
 ShadowNone.args = {
   shadowSize: "none",
 };
 
-export const CardWithSlots = TemplateWithSlots.bind({});
-CardWithSlots.args = {};
+export const CardWithSlots = Template.bind({});
+CardWithSlots.args = {
+  slots: `<template v-slot:header>Header</template>
+          <template v-slot:body>Body text</template>
+          <template v-slot:tags>Tag</template>`,
+};
