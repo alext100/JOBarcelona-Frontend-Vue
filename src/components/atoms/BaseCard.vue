@@ -24,6 +24,16 @@
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
 
+/**
+ * Base Card component
+ * @example
+    <base-card :hover="true" shadow @handleOnClick="handleOnClick">
+      <template v-slot:header>  </template>
+      <template v-slot:body>   </template>
+      <template v-slot:tags>   </template>
+    </base-card>
+ */
+
 export default defineComponent({
   name: "BaseCard",
   emits: ["handleOnClick", "handleKeyDown"],

@@ -15,6 +15,14 @@
 import { defineComponent } from "vue";
 import VueHorizontal from "vue-horizontal";
 
+/**
+ * Horizontal Scroll component
+ * @example
+     <HorizontalScroll :isMobile="upToMediumBreakpoint">
+      Content here
+     </HorizontalScroll>
+ */
+
 export default defineComponent({
   name: "HorizontalScroll",
   components: { VueHorizontal },

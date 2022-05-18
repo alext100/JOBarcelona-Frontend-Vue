@@ -2,6 +2,16 @@ import SplitText from "@/utils/gsap/SplitText.min";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
+/**
+ * Function that apply gsap library plugins ScrollTrigger, SplitText to HTML Elements and make wow effect
+ * @example
+     import useBreakpoints from "@/composables/useBreakpoints";
+     useSplitText(".gift-card__header", "ChartsWave");
+     useSplitText(".gift-card__tag", "staggerFromEnd");
+
+     First argument is css selector of target element, second is method to apply
+ */
+
 const useSplitText = (cssSelector: string, animationSettings: string) => {
   gsap.registerPlugin(ScrollTrigger, SplitText);
 

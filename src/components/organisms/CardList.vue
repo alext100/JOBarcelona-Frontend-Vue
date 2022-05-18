@@ -20,6 +20,12 @@ import GiftCard from "@/components/molecules/GiftCard.vue";
 import useBreakpoints from "@/composables/useBreakpoints";
 import { defineComponent, onMounted, Ref, ref } from "vue";
 
+/**
+ * Card List Component
+ * @example
+     <CardListComponent />
+ */
+
 interface IGroup {
   groupName: string;
   groupDescription: string;

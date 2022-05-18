@@ -33,6 +33,18 @@ import useSplitText from "@/composables/useSplitText";
 import { defineComponent, PropType } from "vue";
 import { mapActions } from "vuex";
 
+/**
+ *  Gift Card component
+ * @example
+     <GiftCard
+      v-for="(group, index) in groups"
+      :key="index"
+      :groupName="group.groupName"
+      :groupDescription="group.groupDescription"
+      :groupTags="group.groupTags"
+    />
+ */
+
 export default defineComponent({
   name: "GiftCard",
   components: { BaseCard, BaseTag, BT: BaseTypography },
