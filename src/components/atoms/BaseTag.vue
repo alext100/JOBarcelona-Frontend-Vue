@@ -15,6 +15,21 @@
 <script lang="ts">
 import { defineComponent, PropType, VNodeTypes } from "vue";
 
+/**
+ * Base Tag component
+ * @example
+      <base-tag
+          v-for="(tag, index) in groupTags"
+          :key="index"
+          class="gift-card__tag"
+          tag="span"
+          shadow
+          shadowSize="sm"
+        >
+          {{ tag }}
+      </base-tag>
+ */
+
 export default defineComponent({
   name: "BaseTag",
   props: {
