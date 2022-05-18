@@ -1,5 +1,12 @@
 import { computed, onMounted, onUnmounted, ref } from "vue";
 
+/**
+ * Composable that watch for window width and return width, breakpoint and category of device screen
+ * @example
+     import useBreakpoints from "@/composables/useBreakpoints";
+     const { width, breakpoint, upToLargeBreakpoint, upToMediumBreakpoint, upToSmallBreakpoint, } = useBreakpoints();
+ */
+
 export default function useBreakpoints() {
   const windowWidth = ref(window.innerWidth);
 
