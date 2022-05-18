@@ -3,13 +3,11 @@
     <base-card :hover="true" shadow @handleOnClick="handleOnClick">
       <template v-slot:header>
         <b-t tag="h2" class="gift-card__header" fontWeight="bold" size="l" uppercase>
-          {{ groupName }}
+          {{ groupName }} 🥳
         </b-t>
-        <img src="party-popper-icon.png" alt="icon" class="gift-card__header-icon" />
       </template>
       <template v-slot:body>
-        <b-t tag="p" class="gift-card__body" size="xs">{{ groupDescription }}</b-t>
-        <img src="party-popper-icon.png" alt="icon" class="gift-card__body-icon" />
+        <b-t tag="p" class="gift-card__body" size="xs">{{ groupDescription }} 🥳</b-t>
       </template>
       <template v-slot:tags>
         <base-tag
