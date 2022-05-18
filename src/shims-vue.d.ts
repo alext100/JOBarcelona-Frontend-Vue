@@ -6,4 +6,3 @@ declare module "*.vue" {
 }
 
 declare module "vue-horizontal";
-declare module "vue-mobile-detection";
