@@ -5,7 +5,7 @@
     responsive
     :button="true"
     button-between
-    :displacement="0.5"
+    :displacement="0.7"
   >
     <slot />
   </vue-horizontal>
@@ -36,14 +36,14 @@ export default defineComponent({
   }
 }
 :deep(.v-hl-btn-next) {
-  right: 25px !important;
+  right: 26px !important;
   opacity: 0.4;
   &:hover {
     opacity: 0.7;
   }
 }
 :deep(.v-hl-btn-prev) {
-  left: 25px !important;
+  left: 26px !important;
   opacity: 0.5;
   &:hover {
     opacity: 0.7;

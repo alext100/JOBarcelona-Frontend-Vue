@@ -59,7 +59,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .weight {
   &-bold {
-    font-weight: bold;
+    font-weight: 600;
   }
   &-light {
     font-weight: 300;
@@ -70,22 +70,22 @@ export default defineComponent({
 }
 .size {
   &-xxs {
-    font-size: calc(1rem + 0.9vw);
+    font-size: clamp(14px, calc(0.6rem + 0.9vw), 16px);
   }
   &-xs {
-    font-size: calc(1.1rem + 0.9vw);
+    font-size: clamp(16px, calc(0.9rem + 0.9vw), 18px);
   }
   &-s {
-    font-size: calc(1.2rem + 0.9vw);
+    font-size: clamp(19px, calc(1rem + 0.9vw), 22px);
   }
   &-l {
-    font-size: calc(1.5rem + 0.9vw);
+    font-size: clamp(24px, calc(1.3rem + 0.9vw), 28px);
   }
   &-xl {
-    font-size: calc(1.7rem + 0.9vw);
+    font-size: clamp(28px, calc(1.5rem + 0.9vw), 32px);
   }
   &-xxl {
-    font-size: calc(2rem + 0.9vw);
+    font-size: clamp(32px, calc(1.7rem + 0.9vw), 36px);
   }
 }
 .italic {

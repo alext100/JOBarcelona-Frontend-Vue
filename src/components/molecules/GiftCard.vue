@@ -1,14 +1,14 @@
 <template>
   <div class="gift-card">
-    <base-card :hover="true" :shadow="true" shadowSize="lg">
+    <base-card :hover="true" shadow>
       <template v-slot:header>
-        <b-t tag="h2" class="gift-card__header" fontWeight="bold" italic size="l" uppercase>
+        <b-t tag="h2" class="gift-card__header" fontWeight="bold" size="l" uppercase>
           {{ groupName }}
         </b-t>
         <img src="party-popper-icon.png" alt="icon" class="gift-card__header-icon" />
       </template>
       <template v-slot:body>
-        <b-t tag="p" class="gift-card__body">{{ groupDescription }}</b-t>
+        <b-t tag="p" class="gift-card__body" size="xs">{{ groupDescription }}</b-t>
         <img src="party-popper-icon.png" alt="icon" class="gift-card__body-icon" />
       </template>
       <template v-slot:tags>
