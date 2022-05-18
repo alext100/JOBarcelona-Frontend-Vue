@@ -1,5 +1,7 @@
 <template>
   <div
+    @click="handleOnClick"
+    @keydown="handleKeyDown"
     class="card"
     :class="[
       { 'card__card-lift--hover': hover },
@@ -24,6 +26,7 @@ import { defineComponent, PropType } from "vue";
 
 export default defineComponent({
   name: "BaseCard",
+  emits: ["handleOnClick", "handleKeyDown"],
   props: {
     headerClasses: {
       type: [String, Object, Array],
@@ -50,6 +53,17 @@ export default defineComponent({
       description: "Card shadow size",
     },
   },
+
+  methods: {
+    handleOnClick() {
+      this.$emit("handleOnClick");
+    },
+    handleKeyDown(event: KeyboardEvent) {
+      if (event) {
+        this.$emit("handleKeyDown");
+      }
+    },
+  },
 });
 </script>
 
@@ -60,13 +74,16 @@ export default defineComponent({
   width: 400px;
   min-height: 180px;
   border: 1px solid blue;
-  background-color: #dcd5ff;
+  background-color: #f5f6ff;
   margin: 10px;
   padding: 3px;
   border-radius: 10px;
+  &:hover {
+    background-color: #dcd5ff;
+  }
   &__card-lift--hover {
     &:hover {
-      transform: translateY(-5px);
+      transform: translateY(-3px);
       transition: all 0.15s ease;
     }
   }

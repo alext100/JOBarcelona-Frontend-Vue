@@ -1,5 +1,5 @@
 <template>
-  <b-t tag="h1" size="xl">
+  <b-t tag="h1" size="xl" class="m-2">
     Lista de regalos en modo de scroll {{ upToMediumBreakpoint ? "vertical" : "horizontal" }}
   </b-t>
   <HorizontalScroll :isMobile="upToMediumBreakpoint">
@@ -41,6 +41,7 @@ export default defineComponent({
           groups.value = data.groups;
         });
     });
+
     return {
       groups,
       upToMediumBreakpoint,
