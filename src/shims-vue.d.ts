@@ -6,4 +6,4 @@ declare module "*.vue" {
 }
 
 declare module "vue-horizontal";
-declare module "@/utils/gsap/SplitText";
+declare module "@/utils/gsap/SplitText.min";
