@@ -89,6 +89,9 @@ jobarcelona22-frontend-vue
 
 ## Cómo funciona
 
+https://user-images.githubusercontent.com/83639312/169144678-24e531ef-28e9-46db-ae95-d77ebb6f384e.mov
+
+
 ## Project setup
 
 ```
