@@ -1,5 +1,7 @@
 # JOBarcelona '22 | Front-end
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eb8965d1-a72f-49c6-baa1-9c6ee02fb6b6/deploy-status)](https://app.netlify.com/sites/jobarcelona-frontend-alext100/deploys)
+
 Este es uno de los retos clasificatorios que forman parte del hackathon online de JOBarcelona ’22. El resultado de este reto va a permitir a los ganadores asistir al hackathon presencial que se realizará el día 31 de mayo de 2022 en el Camp Nou.
 
 ## Reto de Front-end
