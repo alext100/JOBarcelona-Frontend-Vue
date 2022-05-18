@@ -1,4 +1,4 @@
-import SplitText from "@/utils/gsap/SplitText";
+import SplitText from "@/utils/gsap/SplitText.min";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
