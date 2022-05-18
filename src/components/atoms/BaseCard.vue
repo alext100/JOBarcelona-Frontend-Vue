@@ -88,7 +88,7 @@ export default defineComponent({
 
 @media (max-width: 410px) {
   .card {
-    max-width: 95vw;
+    max-width: 90vw;
     min-height: 150px;
     height: fit-content;
   }
