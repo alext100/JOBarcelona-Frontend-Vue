@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
+    "test:unit-dev": "vue-cli-service test:unit --watchAll --collect-coverage",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -32,6 +33,8 @@
     "@storybook/builder-webpack5": "^6.4.22",
     "@storybook/manager-webpack5": "^6.4.22",
     "@storybook/vue3": "^6.4.22",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/vue": "^6.5.1",
     "@types/jest": "^27.5.1",
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",
@@ -39,7 +42,7 @@
     "@vue/cli-plugin-eslint": "~5.0.4",
     "@vue/cli-plugin-router": "~5.0.4",
     "@vue/cli-plugin-typescript": "~5.0.4",
-    "@vue/cli-plugin-unit-jest": "~5.0.4",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
     "@vue/cli-plugin-vuex": "~5.0.4",
     "@vue/cli-service": "~5.0.4",
     "@vue/compiler-sfc": "^3.2.33",
@@ -51,9 +54,11 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-vue": "^8.7.1",
     "sass": "^1.51.0",
-    "sass-loader": "^12.6.0",
-    "typescript": "~4.6.4",
-    "vue-jest": "^5.0.0-0",
-    "vue-loader": "^16.8.3"
+    "sass-loader": "^10.2.1",
+    "ts-loader": "^9.3.0",
+    "typescript": "~4.1.5",
+    "vue-jest": "^5.0.0-alpha.10",
+    "vue-loader": "^16.8.3",
+    "vue-router-mock": "^0.1.7"
   }
 }
