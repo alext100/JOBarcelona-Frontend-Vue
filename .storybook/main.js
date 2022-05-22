@@ -9,6 +9,9 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-actions",
+    "@storybook/addon-jest",
+    "@storybook/addon-a11y",
+    "@storybook/addon-viewport",
     {
       name: "@storybook/addon-docs",
       options: {
