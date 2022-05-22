@@ -35,3 +35,5 @@ HorizontalScrollPC.args = { isMobile: false };
 
 export const HorizontalScrollMobile = Template.bind({});
 HorizontalScrollMobile.args = { isMobile: true };
+
+(HorizontalScrollPC, HorizontalScrollMobile).parameters = { jest: "HorizontalScroll.spec.ts" };

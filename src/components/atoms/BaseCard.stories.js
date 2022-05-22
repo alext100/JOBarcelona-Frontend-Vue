@@ -80,3 +80,7 @@ CardWithSlots.args = {
           <template v-slot:body>Body text</template>
           <template v-slot:tags>Tag</template>`,
 };
+
+(Hover, Shadow, ShadowSm, ShadowLg, ShadowNone, CardWithSlots).parameters = {
+  jest: "BaseCard.spec.ts",
+};

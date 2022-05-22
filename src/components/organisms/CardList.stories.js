@@ -79,3 +79,8 @@ CardListComponent.args = {
     },
   ],
 };
+
+CardListComponent.parameters = {
+  jest: "CardList.spec.ts",
+  a11y: { disable: true },
+};

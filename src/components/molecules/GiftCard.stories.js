@@ -39,3 +39,5 @@ GiftCardComponent.args = {
   groupDescription: "Lista de regalos para el grupo Family",
   groupTags: ["Family", "Sport"],
 };
+
+GiftCardComponent.parameters = { jest: "GiftCard.spec.ts" };

@@ -63,3 +63,7 @@ TagGreenNoShadow.args = {
   color: "green",
   shadow: false,
 };
+
+(DefaultTag, TagBlueShadow, TagRedShadowLg, TagBlackShadowSm, TagGreenNoShadow).parameters = {
+  jest: "BaseTag.spec.ts",
+};
