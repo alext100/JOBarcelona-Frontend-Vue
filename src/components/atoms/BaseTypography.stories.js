@@ -78,3 +78,5 @@ h6.storyName = "h6";
 export const p = Template.bind({});
 p.args = { tag: "p" };
 p.storyName = "p";
+
+(h1, h2, h3, h4, h5, h6, p).parameters = { jest: "BaseTypography.spec.ts" };

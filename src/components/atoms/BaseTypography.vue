@@ -1,5 +1,5 @@
 <template>
-  <component :is="$props.tag" :class="classes">
+  <component :is="$props.tag" :class="classes" data-test="base-typography">
     <slot></slot>
   </component>
 </template>
